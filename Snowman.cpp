@@ -21,7 +21,6 @@ void Snowman::loop()
     if (isItTimeToUpdate())
     {
         _servo.write(_currentSetPoint);
-        Serial.println(_currentSetPoint);
         updateSetPoint();
     }
 }
